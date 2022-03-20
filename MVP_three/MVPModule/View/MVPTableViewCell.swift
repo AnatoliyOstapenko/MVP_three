@@ -13,11 +13,6 @@ class MVPTableViewCell: UITableViewCell {
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     
-    func getListOfText(data: UserModel) {
-        usernameLabel.text = data.username
-        fullNameLabel.text = data.name
-        emailLabel.text = data.email
-    }
     
     @IBAction func infoButtonPressed(_ sender: UIButton) {
         

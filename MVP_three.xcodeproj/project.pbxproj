@@ -17,6 +17,10 @@
 		BC9D76A527E738A9008554EC /* MVPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9D76A327E738A9008554EC /* MVPTableViewCell.xib */; };
 		BC9D76A727E76E68008554EC /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D76A627E76E68008554EC /* UIView+Ext.swift */; };
 		BC9D76A927E77EFC008554EC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D76A827E77EFC008554EC /* UserModel.swift */; };
+		BC9D76AE27E785FA008554EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D76AD27E785FA008554EC /* Constants.swift */; };
+		BC9D76B027E786FE008554EC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D76AF27E786FE008554EC /* NetworkService.swift */; };
+		BC9D76B327E793F6008554EC /* MVPpresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D76B227E793F6008554EC /* MVPpresenter.swift */; };
+		BC9D770B27E7D17E008554EC /* BuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D770A27E7D17E008554EC /* BuilderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		BC9D76A327E738A9008554EC /* MVPTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVPTableViewCell.xib; sourceTree = "<group>"; };
 		BC9D76A627E76E68008554EC /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		BC9D76A827E77EFC008554EC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		BC9D76AD27E785FA008554EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC9D76AF27E786FE008554EC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BC9D76B227E793F6008554EC /* MVPpresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPpresenter.swift; sourceTree = "<group>"; };
+		BC9D770A27E7D17E008554EC /* BuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +74,9 @@
 			children = (
 				BC9D768B27E67F51008554EC /* AppDelegate.swift */,
 				BC9D768D27E67F51008554EC /* SceneDelegate.swift */,
-				BC9D76A827E77EFC008554EC /* UserModel.swift */,
-				BC9D76A127E68095008554EC /* View */,
+				BC9D770A27E7D17E008554EC /* BuilderProtocol.swift */,
+				BC9D76B527E79421008554EC /* MVPModule */,
+				BC9D76B127E78726008554EC /* Services */,
 				BC9D769427E67F54008554EC /* Assets.xcassets */,
 				BC9D769627E67F54008554EC /* LaunchScreen.storyboard */,
 				BC9D769927E67F54008554EC /* Info.plist */,
@@ -85,6 +94,41 @@
 				BC9D76A627E76E68008554EC /* UIView+Ext.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BC9D76AA27E78574008554EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC9D76A827E77EFC008554EC /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC9D76B127E78726008554EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC9D76AD27E785FA008554EC /* Constants.swift */,
+				BC9D76AF27E786FE008554EC /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BC9D76B427E793FF008554EC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC9D76B227E793F6008554EC /* MVPpresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC9D76B527E79421008554EC /* MVPModule */ = {
+			isa = PBXGroup;
+			children = (
+				BC9D76AA27E78574008554EC /* Model */,
+				BC9D76A127E68095008554EC /* View */,
+				BC9D76B427E793FF008554EC /* Presenter */,
+			);
+			path = MVPModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,10 +205,14 @@
 			files = (
 				BC9D769027E67F51008554EC /* MVPViewControler.swift in Sources */,
 				BC9D768C27E67F51008554EC /* AppDelegate.swift in Sources */,
+				BC9D76B027E786FE008554EC /* NetworkService.swift in Sources */,
 				BC9D76A727E76E68008554EC /* UIView+Ext.swift in Sources */,
+				BC9D76B327E793F6008554EC /* MVPpresenter.swift in Sources */,
 				BC9D768E27E67F51008554EC /* SceneDelegate.swift in Sources */,
 				BC9D76A927E77EFC008554EC /* UserModel.swift in Sources */,
 				BC9D76A427E738A9008554EC /* MVPTableViewCell.swift in Sources */,
+				BC9D76AE27E785FA008554EC /* Constants.swift in Sources */,
+				BC9D770B27E7D17E008554EC /* BuilderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

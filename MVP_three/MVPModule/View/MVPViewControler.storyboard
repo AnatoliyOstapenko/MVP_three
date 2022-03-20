@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--User Data-->
+        <!--View Controler-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="MVPViewControler" customModule="MVP_three" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,11 +18,11 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="User Data" id="hYp-it-Olp"/>
+                    <navigationItem key="navigationItem" id="hYp-it-Olp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+            <point key="canvasLocation" x="678" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kYu-x8-14S">
